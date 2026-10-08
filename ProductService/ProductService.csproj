@@ -4,9 +4,11 @@
         <TargetFramework>net9.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-      </PropertyGroup>
+        <UserSecretsId>e93e807f-2ebf-493c-8339-d09dce18fe9b</UserSecretsId>
+  </PropertyGroup>
 
       <ItemGroup>
+        <PackageReference Include="Azure.Storage.Blobs" Version="12.29.2" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.11" />
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">

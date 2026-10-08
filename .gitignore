@@ -5,3 +5,9 @@ obj/
 *.suo
 *.userosscache
 *.sln.docstates
+local.settings.json
+__azurite_db_*
+__blobstorage__/
+__queuestorage__/
+*.txt
+AzuriteConfig

@@ -5,6 +5,8 @@ using DAL.Data;
 using System.Globalization;
 using BLL.Servicios;
 using BLL.Implementaciones;
+using Model;
+using ProductService.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,6 +31,7 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<IProductService, ProductoService>();
 builder.Services.AddScoped<IClienteService, ClienteService>();
 builder.Services.AddScoped<IClienteProductoService, ClienteProductoService>();
+builder.Services.AddScoped<BlobStorageService>();
 
 
 var app = builder.Build();
